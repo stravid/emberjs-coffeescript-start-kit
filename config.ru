@@ -1,14 +1,9 @@
 require 'sprockets'
-require 'handlebars_assets'
 
 project_root = File.expand_path(File.dirname(__FILE__))
 assets = Sprockets::Environment.new(project_root) do |env|
   env.logger = Logger.new(STDOUT)
 end
-
-HandlebarsAssets::Config.template_namespace = 'Ember.TEMPLATES'
-
-assets.append_path HandlebarsAssets.path
 
 assets.append_path(File.join(project_root, 'app', 'assets', 'javascripts'))
 assets.append_path(File.join(project_root, 'app', 'assets', 'stylesheets'))
