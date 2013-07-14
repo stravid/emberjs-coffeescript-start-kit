@@ -6,9 +6,9 @@ Therefore the Ember.js CoffeeScript Start Kit exists. You get the great asset pi
 ## Getting Started
 1. Download or clone this repository.
 2. Run `bundle install` to install the dependencies.
-3. Start the server with `bundle exec rackup -p 3000`.
+3. Start the server with `rake sever` or `rake s`.
 4. Go to [localhost:3000](http://localhost:3000) and start developing.
 
 ## FAQ
-**Is [Pow](http://pow.cx/) supported?**  
+**Is [Pow](http://pow.cx/) supported?**
 Yes.
