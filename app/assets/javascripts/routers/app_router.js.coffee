@@ -1,2 +1,5 @@
 App.Router.map ->
-  @resource "posts"
+  @resource "posts", ->
+    @route "index",
+    @route "show"
+      path: ":id"
