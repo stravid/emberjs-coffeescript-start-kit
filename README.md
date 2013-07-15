@@ -16,7 +16,7 @@ Out of the box this app is set up to use ember-data and assumes you have a servi
 
 The existing post resource assumes that your service on 9292 responds to '/posts' with json returning an array of posts like so:
 
-```json
+```js
 { 
   posts: [
     {title: 'my first post'}, 
