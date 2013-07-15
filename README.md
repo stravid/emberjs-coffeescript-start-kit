@@ -1,4 +1,4 @@
-# Ember.js, Ember-Data, Sprokets, Handlebars Example App / Start-Kit
+# Ember.js, Ember-Data, Sprockets, Handlebars Example App / Start-Kit
 
 This is a fork of another modest project that aimed to make it easy to get started with Ember and CoffeeScript. I've expanded on it here so that I have a working example/bootstrap for getting started with Ember while making use of existing tools like CoffeeScript, Sass, and Handlebars. The original fork had removed `handlebars_assets` but it is working again so I've added it back, and added a Post resource with show/index views for example. This makes use of Ember-Data.
 
