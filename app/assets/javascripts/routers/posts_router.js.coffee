@@ -4,4 +4,4 @@ App.PostsIndexRoute = Ember.Route.extend
 
 App.PostsShowRoute = Ember.Route.extend
   model: (params) ->
-    App.Post.find(params.id)
+    App.Post.find(params.post_id)

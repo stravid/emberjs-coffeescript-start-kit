@@ -2,4 +2,4 @@ App.Router.map ->
   @resource "posts", ->
     @route "index",
     @route "show"
-      path: ":id"
+      path: ":post_id"

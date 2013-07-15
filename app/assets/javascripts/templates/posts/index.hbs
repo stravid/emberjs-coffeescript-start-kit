@@ -1,5 +1,5 @@
 <h1>Posts#index</h1>
 
 {{#each post in content}}
-  {{post.title}}
+  {{#linkTo 'posts.show' post}}{{post.title}}{{/linkTo}}
 {{/each}}
