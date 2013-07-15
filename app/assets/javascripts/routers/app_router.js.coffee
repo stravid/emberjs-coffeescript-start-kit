@@ -1,4 +1,5 @@
-App.Router = Ember.Router.extend
-  root: Ember.Route.extend
-    index: Ember.Route.extend
-      route: '/'
+App.Router.map ->
+  @resource "posts", ->
+    @route "index",
+    @route "show"
+      path: ":post_id"
