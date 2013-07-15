@@ -2,6 +2,16 @@
 
 This is a fork of another modest project that aimed to make it easy to get started with Ember and CoffeeScript. I've expanded on it here so that I have a working example/bootstrap for getting started with Ember while making use of existing tools like CoffeeScript, Sass, and Handlebars. The original fork had removed `handlebars_assets` but it is working again so I've added it back, and added a Post resource with show/index views for example. This makes use of Ember-Data.
 
+**Includes:**
+
+- Ember-Data
+- Sprockets
+- Handlebars
+- Rake tasks
+  - `rake server` to start rack app
+  - `rake assets:compile` to build stand-alone static assets
+- Basic app example/scaffold
+
 Ember.js already has a simple [start kit](https://github.com/emberjs/starter-kit) for JavaScript developers. Unfortunately starting with Ember.js and CoffeeScript is a little harder.
 
 It is possible to create a new Rails application with [ember-rails](https://github.com/emberjs/ember-rails) and let the asset pipeline handle the CoffeeScript. But when you start out with Ember.js you probably don't want an entire Rails application to start with.
@@ -45,6 +55,14 @@ And `/posts/:id` expects a response like:
   "post": {"id": 1, "title": "my first post"}
 }
 ```
+
+## Build Static Assets
+
+You can compile your project into a stand-alone static site with the rake task 
+
+`rake assets:compile`
+
+which will minify and gzip your assets into a 'build' folder, and copy index.html over there as well.
 
 ## FAQ
 **Is [Pow](http://pow.cx/) supported?**
