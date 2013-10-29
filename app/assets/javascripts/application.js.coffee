@@ -3,4 +3,5 @@
 #= require ember-1.0.0-pre.4
 
 #= require app
+#= require_tree ./templates
 #= require_tree .
